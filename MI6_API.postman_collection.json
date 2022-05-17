@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "40fca8ad-74c5-4245-bc1e-30824a40566e",
+		"name": "MI6_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mission",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"agent\": \"011\",\"country\": \"Poland\",\"address\": \"swietego Tomasza 35, Krakow\",\"date\": \"2012-07-27T18:51:45.53403Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:58534/mission",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "58534",
+					"path": [
+						"mission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "countries-by-isolation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:58534/countries-by-isolation",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "58534",
+					"path": [
+						"countries-by-isolation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-closest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\"address\":\"Ostashinski Street 24, Kefar Sava\", \"lng\":-122.084, \"lat\":37.4219983}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:58534/find-closest",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "58534",
+					"path": [
+						"find-closest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
